@@ -7,6 +7,11 @@
     <groupId>org.example</groupId>
     <artifactId>data-engine</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>data-engine-common</module>
+        <module>data-engine-core</module>
+        <module>data-engine-config</module>
+    </modules>
 
     <packaging>pom</packaging>
 
@@ -17,14 +22,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <flink.version>1.8.3</flink.version>
+        <flink.version>1.11.2</flink.version>
         <hadoop.version>2.6.5</hadoop.version>
         <scala.binary.version>2.11</scala.binary.version>
         <scala.version>2.11.11</scala.version>
         <lombok.version>1.16.18</lombok.version>
         <fastjson.version>1.2.70</fastjson.version>
     </properties>
-
 
     <build>
         <finalName>${project.artifactId}-${version}</finalName>
